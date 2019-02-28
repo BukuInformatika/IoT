@@ -18,11 +18,27 @@ Dalam jaringan komputer, protokol merupakan suatu perangkat aturan yang menata a
 
 Pada dasarnya protokol merupakan suatu aturan yang mendefinisikan sebuah fungsi seperti mengirimkan pesan, mengirimkan data, mengirimkan informasi dan berbagai macam fungsi lainnya. Fungsi-fungsi tersebut harus dapat dipenuhi oleh pengirim dan penerima supaya komunikasi yang dilakukan berlangsung secara baik dan benar, meskipun sistem yang terdapat dalam jaringan tersebut berbeda. Protokol menangani semua hal yang berkaitan dalam komunikasi data, dari pertukaran data yang memiliki perbedaan format data hingga sampai ke masalah koneksi listrik dalam suatu jaringan. Pada jaringan komputer, terdapat sebuah proses komunikasi dari suatu entiti atau perangkat dengan entiti lainnya yang memiliki sistem berbeda. Entiti tersebut merupakan segala sesuatu yang dapat melakukan proses mengirim dan menerima sehingga dibutuhkan pengertian yang baik antara kedua entiti tersebut agar dapat saling berkomunikasi dengan baik, sama halnya dengan protokol.
 
-Protokol dapat mendefinisikan apa yang dikomunikasikan bagaimana dan kapan terjadinya suatu komunikasi. Untuk menjalakan sebuah komunikasi yang baik dan benar, dibutuhkan beberapa elemen-elemen penting dalam suatu protokol. Elemen-elemen tersebut adalah :
-\begin{itemize}
-\item \textbf{Syntax} 
-\item \textbf{Semantics} 
-\item \textbf{Timing} 
-\end{itemize}
+\subsection{Jenis-Jenis Protokol}
+\begin{enumerate}
+\item \textbf{Protokol Ethernet}
+
+Protokol Ethernet merupakan protokol yang sering digunakan pada saat ini. Metode akses yang digunakan oleh Ethernet biasa disebut dengan CSMA(\textit{Carrier Sense Multiple Access}) atau CD(\textit{Collision Detection}. Cara kerja dari protokol Ethernet dimana sebuah sistem pada setiap komputer menunggu intruksi melalui rangkaian kabel sebelum mengirimkan data atau informasi melalui sebuah jaringan. Jika jaringan tidak sibuk, komputer akan mengirimkan informasi data namun jika suatu node lain sudah menyampaikan pesan melalui kabel tersebut, maka komputer akan menunggu dan mencobanya kembali setelah rute telah aman. 
+\item \textbf{TCP/IP}
+
+TCP/IP atau \textit{Transmission Control Protocol}) atau \textit{Internet Protocol} merupakan standar dari komunikasi data yang dipakai oleh jaringan internet dalam proses tukar-menukar data atau informasi dari satu komputer menuju komputer lainnya dalam jaringan internet. 
+\item \textbf{UDP}
+
+UDP (\textit{User Datagram Protocol}) merupakan salah satu protokol transpor TCP/IP yang dapat mendukung suatu komunikasi yang unreiable tanpa melalui koneksi antar host dalam suatu jaringan yang menggunakan TCP/IP.
+\item \textbf{RTP}
+
+RTP (\textit{Real Time Protocol}) merupakan protokol yang dirancang untuk menyediakan fungsi-fungsi transport jaringan untuk mengirimkan data secara realtime seperti data audio, video melalu layanan multicast atau layana unicast.
+\item \textbf{FTP}
+
+FTP (\textit{File Transfer Protocol}) merupakan jenis protokol yang digunakan untuk melakukan upload ataupun mendownload file dimana keamanannya dibuat berdasarkan dari username dan juga password.
+\item \textbf{HTTP}
+
+HTTP (\textit{Hyper Text Transfer Protocol}) merupakan protokol yang digunakan untuk melakukan transfer halaman web.
+\end{enumerate}
+
 
  
