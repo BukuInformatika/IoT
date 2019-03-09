@@ -8,7 +8,9 @@
 
 \subsection{Alat dan Bahan} 
 \begin{enumerate}
-\item Arduino. Pada gambar \ref{labelgambar1} merupakan gambar arduino yang digunakan pada pembuatan alat ini
+\item Arduino
+\subitem Arduino adalah pengendali mikro single-board yang bersifat sumber terbuka, diturunkan dari Wiring platform, dirancang untuk memudahkan penggunaan elektronik dalam berbagai bidang
+ Pada gambar \ref{labelgambar1} merupakan gambar arduino yang digunakan pada pembuatan alat ini
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/ALAT_PENDETEKSI_BANJIR/arduino1c}
@@ -16,7 +18,8 @@
 	\label{labelgambar1}
 	\end{figure}
 
-\item Bread board. Pada gambar \ref{labelgambar2} merupakan gambar Bread Board yang digunakan pada pembuatan alat ini.
+\item Bread board
+\subitem Breadboard adalah board yang digunakan untuk membuat rangkaian elektronik sementara dengan tujuan uji coba atau prototipe tanpa harus menyolder. Pada gambar \ref{labelgambar2} merupakan gambar Bread Board yang digunakan pada pembuatan alat ini.
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/ALAT_PENDETEKSI_BANJIR/bread_board_1c}
@@ -24,7 +27,8 @@
 	\label{labelgambar2}
 	\end{figure}
 
-\item Kabel jumper. Pada gambar \ref{labelgambar3} merupakan gambar Kabel Jumper yang digunakan pada pembuatan alat ini.
+\item Kabel jumper 
+\subitem kabel penghubung yang biasa digunakan untuk membuat rangkaian sistem atau prototype sistem 	menggunakan arduino dan breadboard. Pada gambar \ref{labelgambar3} merupakan gambar Kabel Jumper yang digunakan pada pembuatan alat ini.
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/ALAT_PENDETEKSI_BANJIR/kabel_jumper_1c}
@@ -32,7 +36,8 @@
 	\label{labelgambar3}
 	\end{figure}
 
-\item Pendeteksi sensor ultrasonik. Pada gambar \ref{labelgambar4} merupakan gambar Pendeteksi Sensor Ultrasonik yang digunakan pada pembuatan alat ini.
+\item Pendeteksi sensor ultrasonik
+\subitem Sensor yang dapat mendeteksi gelombang ultrasonik, yaitu gelombang suara yang memiliki frekuensi ultrasonik atau frekuensi di atas kisaran frekuensi pendengaran manusia. Pada gambar \ref{labelgambar4} merupakan gambar Pendeteksi Sensor Ultrasonik yang digunakan pada pembuatan alat ini.
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/ALAT_PENDETEKSI_BANJIR/pendeteksi_sensor_ultrasonik_1c}
@@ -40,7 +45,8 @@
 	\label{labelgambar4}
 	\end{figure}
 
-\item Arduino IDE.  Pada gambar \ref{labelgambar5} merupakan gambar Arduino IDE yang digunakan pada pembuatan alat ini.
+\item Arduino IDE
+\subitem Merupakan aplikasi yang digunakan untuk mengatur program pada arduino. Pada gambar \ref{labelgambar5} merupakan gambar Arduino IDE yang digunakan pada pembuatan alat ini.
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/ALAT_PENDETEKSI_BANJIR/arduino_IDE_1c}
@@ -48,7 +54,8 @@
 	\label{labelgambar5}
 	\end{figure}
 
-\item Lampu LED.  Pada gambar \ref{labelgambar6} merupakan gambar Arduino IDE yang digunakan pada pembuatan alat ini.
+\item Lampu LED
+\subitem Produk diode pancaran cahaya yang disusun menjadi sebuah lampu. Pada gambar \ref{labelgambar6} merupakan gambar Lampu LED yang digunakan pada pembuatan alat ini.
 	\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/ALAT_PENDETEKSI_BANJIR/lampu_led_1c}
@@ -105,13 +112,20 @@ void loop() {
 }
 \end{lstlisting}
 
-\subsection{BAGAIMANA CARA PASANG NYA ?}
+\subsection{BAGAIMANA CARA PASANG NYA?}
 \begin{enumerate}
 \item Masukan lampu led di port GND dan Port 13
 \item Pasang Pendeteksi sensor HC-SR04
 \item Sambungkan kabel juper nya dengan urutan port 11 dan 10 di masukan di port echo danport trig
 \item Masukan port 5v ke port vcc
 \item Masukan port GND ke Port GND
+\end{enumerate}
+
+\subsection{Bagaimana Cara Kerja alat nya?}
+\begin{enumerate}
+\item Sensor diletakan di samping sungai atau di selokan besar
+\item Sensor akan berubah warna menjadi warna merah apabila air naik 
+\item Sensor akan mendeteksi air pada jarak 10 cm dan akan langsung memberi perigatan banjir 
 \end{enumerate}
 
 \subsection{FOTO ALAT PENDETEKSI BANJIR}
