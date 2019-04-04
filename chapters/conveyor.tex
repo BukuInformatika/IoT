@@ -105,5 +105,46 @@ RST&Digital 9\\
 \includegraphics[width=.75\textwidth]{figures/CONV/rfid.jpg}
 \caption{Sambungan antara RFID dengan Arduino Uno}\label{fig:rfid}
 \end{figure}
+
+\subitem Yang pertama kita lakukan adalah meng-import librarie yaitu SPI,MFRC522, dan Ethernet. SPI berguna untuk mengubungkan lebih dari satu mikrokontroler dimana disini kita menghubungkan Arduino uno dan ethernet, MFRC522 adalah librarie untuk RFID nya, dan yang terkahir adalah librarie untuk Arduino ethernet. Dan selanjutnya kita mendefinisikan alamat ip untuk Arduino ethernet nya yaitu 192.168.8.98, setelah itu kita juga harus mengubah jaringan kita menjadi static menjadi 192.168.8.99 agar data nya dapat terkirim ke com kita.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/cov2.jpg}
+\caption{Code Void Loop}\label{fig:cov2}
+\end{figure}
+
+\subitem Gambar \ref{fig:2} adalah void loop yg dimana ini akan di jalakan terus menerus, ini adalah codingan untuk rfid, artinya adalah Reader mana yang telah membaca si tag dan apa kode si tag tersebut dan selanjut nya kode tersebut akan di kirim melalui ip yang telah di setting sebelum nya.
 \end{enumerate}
-  
+
+\section{LCD}
+\begin{enumerate}
+\begin{table}[h]
+\caption{Perakitan}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{LCD}&\textbf{Arduino Uno}\\
+\hline
+GND&GND\\
+\hline
+VCC&5 V\\
+\hline
+SDA&A4\\
+\hline
+SCL&A5\\
+\hline
+\end{tabular}
+\label{table:Perakitan LCD}
+\end{table}
+\item Pemasangan kabel jumper yang digunakan adalah kabe male to male seperti pada gambar \ref{fig:lcd}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/lcd.jpg}
+\caption{Kabel jumper pada LCD dan Arduino}\label{fig:lcd}
+\end{figure}
+
+
+
+\end{enumerate}
