@@ -145,6 +145,142 @@ SCL&A5\\
 \caption{Kabel jumper pada LCD dan Arduino}\label{fig:lcd}
 \end{figure}
 
+\item Untuk source code yang di lakukan pada LCD dapat kita lakukan dengan mengimport librarie terlebih dahulu dan dapat kita lihat pada \ref{fig:codelcd}.
 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/codelcd.jpg}
+\caption{Code Librarie Pada LCD}\label{fig:codelcd}
+\end{figure}
 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/vlcd.jpg}
+\caption{Code Void Loop Pada LCD}\label{fig:vlcd}
+\end{figure}
 \end{enumerate}
+
+\section{Servo}
+\begin{enumerate}
+\begin{table}[h]
+\caption{Perakitan}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Servo}&\textbf{Arduino Uno}\\
+\hline
+GND&GND\\
+\hline
+VCC&5 V\\
+\hline
+Data&5 dan 6\\
+\hline
+\end{tabular}
+\label{table:Perakitan Servo}
+\end{table}
+\item Pemasangan kabel jumper yang digunakan adalah kabe male to female seperti pada gambar \ref{fig:servo}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/servo.jpg}
+\caption{Kabel jumper pada Servo dan Arduino}\label{fig:servo}
+\end{figure}
+
+\item Pertama kita harus mengimport librarie nya dan mendefinikan servo 1 dan 2, selanjutnya kita setting posisi awal servo. Di void loop adalah codingan yg terus di lakukan yg dimana servo1 bergerak selama 4 detik dan servo2 bergedak 4,5 detik. Kita dapat melihat source codenya seperti pada gambar \ref{fig:cservo}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/cservo.jpg}
+\caption{Source Code Servo}\label{fig:cservo}
+\end{figure}
+\end{enumerate}
+
+\section{Buzzer}
+\begin{enumerate}
+\begin{table}[h]
+\caption{Perakitan}
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Buzzer}&\textbf{Arduino Uno}\\
+\hline
+GND&GND\\
+\hline
+I/0&A3\\
+\hline
+\end{tabular}
+\label{table:Perakitan Buzzer}
+\end{table}
+
+\item Pertama adalah kita definisikan si buzzer  menjadi output yang artinya menghasilkan suara dan di void loop kita masukin buzzer ke void LEDBlue dan LEDOrange yang artinya adalah si buzzer berbunyi seberapa lama.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/cbuzzer.jpg}
+\caption{Source Code Buzzer}\label{fig:cbuzzer}
+\end{figure}
+
+\item Pemasangan kabel jumper yang digunakan adalah kabe male to male seperti pada gambar \ref{fig:buzzer}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/buzzer.jpg}
+\caption{Kabel jumper pada Buzzer dan Arduino}\label{fig:buzzer}
+\end{figure}
+\end{enumerate}
+
+\section{Penggunaan Bahasa C pada Arduino}
+Bahasa C merupakan bahasa yang terdiri dari berbagai fungsi (function) yang dapat digunakan kembali untuk pembuatan program-program lainnya tanpa harus menulis ulang impelemtasinya. Struktur penulisan dalam bahasa C harus memiliki fungsi utama yang disebut main(). Fungsi inilah yang akan dipanggil pertama kali pada saat proses eksekusi program. Artinya apabila kita mempunyai fungsi lain selain fungsi utama maka fungsi lain tersebut baru akan dipanggil pada saat digunakan.
+
+Struktur pemograman Arduino :
+\begin{itemize}
+\item \textbf{Void setup()\{\}} : Semua coding yang berada didalam void setup akan dijalankan hanya satu kali ketika program Arduino dijalankan untuk pertama kalinya.
+\item \textbf{Void loop()\{\}} : Fungsi ini akan dijalankan setelah void setup selesai. Setelah dijalankan satu kali fungsi ini akan dijalankan lagi dan lagi secara terus menerus hingaa catu daya dilepaskan.
+\end{itemize}
+
+Variabel :
+\begin{itemize}
+\item \textbf{Int()} : Mengkonversi nilai ke tipe data int. int menyimpan angka dalam 2 byte(16 bit).
+Contoh : int bilangan = 6;
+	Artinya adalah mendeklarasikan suatu variable dengan nama “bilangan” dengan nilai 6.
+\item \textbf{Long()} : Digunakan ketika int tidak mencukupi lagi. Long memakai 4 byte (32 bit).
+Contoh : long aku = 2000;
+	Artinya adalah mendeklarasikan suatu variable dengan nama “aku” dengan nilai 2000.
+\item \textbf{Boolean()} : Untuk menyimpan nilati True dan False.
+Contoh : boolean jalan = false;
+	Artinya adalah variable “jalan” memiliki nilai awal false.
+\item \textbf{Char()} : Menyimpan 1 karakter menggunakan kode ASCII.
+\end{itemize}
+
+Struktur Pengaturan :
+\begin{itemize}
+\item \textbf{If...else} :
+if(kondisi)\{\}
+else if(kondisi)\{\}
+else(kondisi)\{\}
+Dengan struktur diatas program akan menjalankan kode yang ada di dalam kurung kurawal, misalnya jika kondisi di if benar makan coding pada if akan dijalankan, begitu juga sebaliknya, jika kondisi di else benar makan hanya coding di else yang akan dijalankan.
+\item \textbf{Return} : Menghentikan suatu fungsi dan mengembalikan nilai dari suatu fungsi ke fungsi panggilan, jika diiginkan.
+\item \textbf{For} : 
+For digunakan untuk mengulangi blok pernyataan yang dilampirkan di dalam kurung kurawal.
+Contoh : for ( cth1; cth2 ; cth3)\{statement\}
+Dimana,  cth1 :  untuk inisialisasi nilai awal
+	    cth2 : untuk kondisi
+	    cth3 : untuk increment atau decrement
+cth1 akan dieksekusi pertama kali tahap ini digunakan untuk deklarasi dan pemberian nilai awal untuk variable control, cth2 selanjutnya akan di evaluasi, jika kondisi bernilai benar makan statement akan dijalankan dan jika salah makan statement tidak dijalankan dan proses perulangan for tersebut akan berhenti, apabila statement dijalankan maka cth3 digunakan untuk mengatur perubahan nilai dari variable control.
+\end{itemize}
+
+\textbf{Prosedur} :
+Prosedur adalah suatu kode program yang terpisah dalam blok sendiri yang berfungsi sebagai subprogram yang bertujuan untuk memecahkan program-program yang rumit menjadi lebih sederhana. 
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/prs.jpg}
+\caption{Contoh Prosedur}\label{fig:prs}
+\end{figure}
+
+Gambar \ref{fig:prs} merupakan  beberapa contoh prosedur yg terdiri dari prodesur  LCDreset(), LCDpecahbelah(), LCDBukanpecahbelah() dan LCDtidakterdeteksi(). Dan prosedur ini akan di panggil ke kondisi if else seperti pada gambar \ref{fig:prs1}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=.75\textwidth]{figures/CONV/prs1.jpg}
+\caption{Kondisi if else}\label{fig:prs1}
+\end{figure}
